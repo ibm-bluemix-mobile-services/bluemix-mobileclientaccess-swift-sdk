@@ -1,0 +1,8 @@
+applications:
+- disk_quota: 512M
+  host: swiftapp1
+  name: swiftapp1
+  instances: 1
+  memory: 1024M
+  timeout: 180
+  buildpack: https://github.com/cloudfoundry-community/swift-buildpack.git

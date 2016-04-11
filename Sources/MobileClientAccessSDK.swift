@@ -1,0 +1,112 @@
+import Foundation
+import SwiftyJSON
+
+public class MobileClientAccessSDK{
+	let logger = Logger(forName:"MobileClientAccessSDK")
+	public static let HEADER_AUTHORIZATION = "Authorization"
+	public static let BEARER = "Bearer"
+
+	public static let sharedInstance = MobileClientAccessSDK()
+
+	private init(){
+		logger.info("Initializing")
+	}
+	
+	public func authorizationContext(from authorizationHeader:String?) throws -> AuthorizationContext {
+		logger.debug("authorizationData:from:")
+		
+		guard authorizationHeader != nil else {
+			logger.error(MCAErrorInternal.AuthorizationHeaderNotFound.rawValue)
+			throw MCAError.Unauthorized
+		}
+		
+		let authHeaderComponents:[String]! = authorizationHeader?.componentsSeparated(by: " ")
+		// authHeader format :: Bearer accessToken idToken
+		guard authHeaderComponents?.count == 3 else {
+			logger.error(MCAErrorInternal.InvalidAuthHeaderFormat.rawValue)
+			throw MCAError.Unauthorized
+		}
+		
+		guard authHeaderComponents[0] == MobileClientAccessSDK.BEARER else {
+			logger.error(MCAErrorInternal.InvalidAuthHeaderFormat.rawValue)
+			throw MCAError.Unauthorized
+		}
+		
+		let accessTokenComponent = authHeaderComponents[1]
+		let idTokenComponent:String? = authHeaderComponents[2]
+		
+		guard isAccessTokenValid(accessTokenComponent) else {
+			throw MCAError.Unauthorized
+		}
+
+		return try! getAuthorizedIdentities(from: idTokenComponent!)
+	}
+	
+	func isAccessTokenValid(accessToken:String) -> Bool{
+		logger.debug("isAccessTokenValid:")
+		
+		if let jwt = try? parseToken(from: accessToken) {
+			let jwtPayload = jwt["payload"]
+			let jwtExpirationTimestamp = jwtPayload["exp"].doubleValue
+			return jwtExpirationTimestamp > NSDate().timeIntervalSince1970
+		} else {
+			return false
+		}
+	}
+	
+	func getAuthorizedIdentities(from idToken:String) throws -> AuthorizationContext{
+		logger.debug("getAuthorizedIdentities:from:")
+		
+		if let jwt = try? parseToken(from: idToken) {
+			return AuthorizationContext(idToken: jwt)
+		} else {
+			throw MCAError.Unauthorized
+		}
+		
+	}
+
+	func parseToken(from tokenString:String) throws -> JSON {
+		logger.debug("parseToken:from:")
+		
+		let accessTokenComponents = tokenString.componentsSeparated(by: ".")
+		
+		guard accessTokenComponents.count == 3 else {
+			logger.error(MCAErrorInternal.InvalidAccessTokenFormat.rawValue)
+			throw MCAErrorInternal.InvalidAccessTokenFormat
+		}
+		
+		let jwtHeaderData = accessTokenComponents[0].base64decodedData()
+		let jwtPayloadData = accessTokenComponents[1].base64decodedData()
+		let jwtSignature = accessTokenComponents[2]
+		
+		guard jwtHeaderData != nil && jwtPayloadData != nil else {
+			logger.error(MCAErrorInternal.InvalidAccessTokenFormat.rawValue)
+			throw MCAErrorInternal.InvalidAccessTokenFormat
+		}
+
+		let jwtHeader = JSON(data: jwtHeaderData!)
+		let jwtPayload = JSON(data: jwtPayloadData!)
+		
+		var json = JSON([:])
+		json["header"] = jwtHeader
+		json["payload"] = jwtPayload
+		json["signature"] = JSON(jwtSignature)
+		return json
+	}
+}
+
+
+
+
+/*
+Bearer eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQUkzT2YyZFd5VnVwY183OHY3WVl6WXRpZ05mZ083ZHdxYmtscHZQaE5MYWpOR1ROdWRfc1Nqb2x0QWJCVnFCZFRpYmMybDNXUmlWUzJSWUxkbnhidG9jRkNka0cyLWJLdC0xNWNVM1VFTW5QeGw5TW9Rc2U1cXlJMEVzcFVkelh4RjY1dVNEeUR2VnhvekFXZkdocXNMSUE0THlOV1phU1dOUERWUzhxelc4Zi1HUjlfb3ZIaGhXVEZWRzlCQ3JwV0VqTGZDaTFSWEREWWY3MXkzQ0tQUXY4RzYxSGZBQVMwRC1zMndEbC1mUGZJTDlHQUdnS29LSnQ5T0V6VlRwakt0cW5YNHNxeWUyVXZhWm5FYkRtUDdVTGtpSGtCdlUwSEhwNmM1cnF6QlFxUGxyNGhiYVhPM3JDZW5DNl80Ml9lZDEyNEYxWjVCS21WVmo3NUYzckpROCJ9fQ.eyJleHAiOjE5NjAzMTE2ODgsImF1ZCI6IjJmZTM1NDc3LTUxYjAtNGM4Ny04MDNkLWFjYTU5NTExNDMzYiIsImlzcyI6Imh0dHA6XC9cL2FibXMubXlibHVlbWl4Lm5ldDo4MFwvaW1mLWF1dGhzZXJ2ZXJcL2F1dGhvcml6YXRpb25cLyIsInBybiI6IjYzODA4MDJkZjZkZjlhNzAzODA2MzVjMDA4MmJmOTEzMjA1MTc2ZTAifQ.UDLdkoCDcM9i3k1QR4NGVbJr2O7vic2v1PRKxetNF-ToOink-zQFfMLtHOIgfxxrI65hbo4b_jYYr4LHaryZNis3bb5YUbtfmH3EFkrp_UHQZVZ_X9OTQnA3zAu_VjDyB0ta8zMPHS3nXZfjqHg_WlPy2WpkfUh94Jwpj5l39mVKFOA3FyD6KPOv_DJQ3STiMBP62kJ9jYGyrURZJPFlAJ48ktiPPWQ9zms0x_lQLjGVkoIt8-SDy1n1pT3mfKhvie7unQbZUDdSSgoJnLEaFTO4LzBwn6b4TtQhSmEV_OjFqinOuTeqwYOZIpaqjGRD8h_0PeChcWCnXXwwuXyC5g eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQUkzT2YyZFd5VnVwY183OHY3WVl6WXRpZ05mZ083ZHdxYmtscHZQaE5MYWpOR1ROdWRfc1Nqb2x0QWJCVnFCZFRpYmMybDNXUmlWUzJSWUxkbnhidG9jRkNka0cyLWJLdC0xNWNVM1VFTW5QeGw5TW9Rc2U1cXlJMEVzcFVkelh4RjY1dVNEeUR2VnhvekFXZkdocXNMSUE0THlOV1phU1dOUERWUzhxelc4Zi1HUjlfb3ZIaGhXVEZWRzlCQ3JwV0VqTGZDaTFSWEREWWY3MXkzQ0tQUXY4RzYxSGZBQVMwRC1zMndEbC1mUGZJTDlHQUdnS29LSnQ5T0V6VlRwakt0cW5YNHNxeWUyVXZhWm5FYkRtUDdVTGtpSGtCdlUwSEhwNmM1cnF6QlFxUGxyNGhiYVhPM3JDZW5DNl80Ml9lZDEyNEYxWjVCS21WVmo3NUYzckpROCJ9fQ.eyJleHAiOjE0NjAzMTE2ODgsInN1YiI6Ijo6NjM4MDgwMmRmNmRmOWE3MDM4MDYzNWMwMDgyYmY5MTMyMDUxNzZlMCIsImltZi5hcHBsaWNhdGlvbiI6eyJpZCI6bnVsbCwidmVyc2lvbiI6IjEuMCJ9LCJhdWQiOiIyZmUzNTQ3Ny01MWIwLTRjODctODAzZC1hY2E1OTUxMTQzM2IiLCJpc3MiOiJodHRwOlwvXC9hYm1zLm15Ymx1ZW1peC5uZXQ6ODBcL2ltZi1hdXRoc2VydmVyXC9hdXRob3JpemF0aW9uXC8iLCJpYXQiOjE0NjAzMDgwODgsImltZi5kZXZpY2UiOnsiaWQiOiJkN2JmMjY1ZC01NWFlLTM3ODctODA1OC02NmY5N2U3YWEzNDkiLCJwbGF0Zm9ybSI6IkFuZHJvaWQiLCJtb2RlbCI6IkFuZHJvaWQgU0RLIGJ1aWx0IGZvciB4ODZfNjQiLCJvc1ZlcnNpb24iOiI2LjAifX0.aNSzQB16G9WPv8z1Q5nFyyQAvX5P-llkqmfOJiyO51krzFTiBZCx3WeqqnRA4Hd_ltQAReAq5JYp0ZHo0bN0qtdEeJBGXsR9PGj4uWWCFV1AQrZBBdZfn_Y_6MqkQng4k3VJh3896y3FBAB5qiubAuNt2-7WP-NOAAq-k_3myvyqOwkIcgqnlyCZ_TnayigSwBuiGnfMQ8AUl6vO05UuqGWhuaZNzduW826wI6P8_sjGZLv8f_ZTf5v2WHiK1RhEN-VnbQMV6nMDRtMS9n4M7KiFcGXkQn3KRsfYCTxtia0yXpaReACHm3mJt5xTNmunQ0tr62d49Quqhd0aoTqvHA
+
+access:
+eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQUkzT2YyZFd5VnVwY183OHY3WVl6WXRpZ05mZ083ZHdxYmtscHZQaE5MYWpOR1ROdWRfc1Nqb2x0QWJCVnFCZFRpYmMybDNXUmlWUzJSWUxkbnhidG9jRkNka0cyLWJLdC0xNWNVM1VFTW5QeGw5TW9Rc2U1cXlJMEVzcFVkelh4RjY1dVNEeUR2VnhvekFXZkdocXNMSUE0THlOV1phU1dOUERWUzhxelc4Zi1HUjlfb3ZIaGhXVEZWRzlCQ3JwV0VqTGZDaTFSWEREWWY3MXkzQ0tQUXY4RzYxSGZBQVMwRC1zMndEbC1mUGZJTDlHQUdnS29LSnQ5T0V6VlRwakt0cW5YNHNxeWUyVXZhWm5FYkRtUDdVTGtpSGtCdlUwSEhwNmM1cnF6QlFxUGxyNGhiYVhPM3JDZW5DNl80Ml9lZDEyNEYxWjVCS21WVmo3NUYzckpROCJ9fQ.eyJleHAiOjE5NjAzMTE2ODgsImF1ZCI6IjJmZTM1NDc3LTUxYjAtNGM4Ny04MDNkLWFjYTU5NTExNDMzYiIsImlzcyI6Imh0dHA6XC9cL2FibXMubXlibHVlbWl4Lm5ldDo4MFwvaW1mLWF1dGhzZXJ2ZXJcL2F1dGhvcml6YXRpb25cLyIsInBybiI6IjYzODA4MDJkZjZkZjlhNzAzODA2MzVjMDA4MmJmOTEzMjA1MTc2ZTAifQ.UDLdkoCDcM9i3k1QR4NGVbJr2O7vic2v1PRKxetNF-ToOink-zQFfMLtHOIgfxxrI65hbo4b_jYYr4LHaryZNis3bb5YUbtfmH3EFkrp_UHQZVZ_X9OTQnA3zAu_VjDyB0ta8zMPHS3nXZfjqHg_WlPy2WpkfUh94Jwpj5l39mVKFOA3FyD6KPOv_DJQ3STiMBP62kJ9jYGyrURZJPFlAJ48ktiPPWQ9zms0x_lQLjGVkoIt8-SDy1n1pT3mfKhvie7unQbZUDdSSgoJnLEaFTO4LzBwn6b4TtQhSmEV_OjFqinOuTeqwYOZIpaqjGRD8h_0PeChcWCnXXwwuXyC5g
+
+id:
+eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQUkzT2YyZFd5VnVwY183OHY3WVl6WXRpZ05mZ083ZHdxYmtscHZQaE5MYWpOR1ROdWRfc1Nqb2x0QWJCVnFCZFRpYmMybDNXUmlWUzJSWUxkbnhidG9jRkNka0cyLWJLdC0xNWNVM1VFTW5QeGw5TW9Rc2U1cXlJMEVzcFVkelh4RjY1dVNEeUR2VnhvekFXZkdocXNMSUE0THlOV1phU1dOUERWUzhxelc4Zi1HUjlfb3ZIaGhXVEZWRzlCQ3JwV0VqTGZDaTFSWEREWWY3MXkzQ0tQUXY4RzYxSGZBQVMwRC1zMndEbC1mUGZJTDlHQUdnS29LSnQ5T0V6VlRwakt0cW5YNHNxeWUyVXZhWm5FYkRtUDdVTGtpSGtCdlUwSEhwNmM1cnF6QlFxUGxyNGhiYVhPM3JDZW5DNl80Ml9lZDEyNEYxWjVCS21WVmo3NUYzckpROCJ9fQ.eyJleHAiOjE0NjAzMTE2ODgsInN1YiI6Ijo6NjM4MDgwMmRmNmRmOWE3MDM4MDYzNWMwMDgyYmY5MTMyMDUxNzZlMCIsImltZi5hcHBsaWNhdGlvbiI6eyJpZCI6bnVsbCwidmVyc2lvbiI6IjEuMCJ9LCJhdWQiOiIyZmUzNTQ3Ny01MWIwLTRjODctODAzZC1hY2E1OTUxMTQzM2IiLCJpc3MiOiJodHRwOlwvXC9hYm1zLm15Ymx1ZW1peC5uZXQ6ODBcL2ltZi1hdXRoc2VydmVyXC9hdXRob3JpemF0aW9uXC8iLCJpYXQiOjE0NjAzMDgwODgsImltZi5kZXZpY2UiOnsiaWQiOiJkN2JmMjY1ZC01NWFlLTM3ODctODA1OC02NmY5N2U3YWEzNDkiLCJwbGF0Zm9ybSI6IkFuZHJvaWQiLCJtb2RlbCI6IkFuZHJvaWQgU0RLIGJ1aWx0IGZvciB4ODZfNjQiLCJvc1ZlcnNpb24iOiI2LjAifX0.aNSzQB16G9WPv8z1Q5nFyyQAvX5P-llkqmfOJiyO51krzFTiBZCx3WeqqnRA4Hd_ltQAReAq5JYp0ZHo0bN0qtdEeJBGXsR9PGj4uWWCFV1AQrZBBdZfn_Y_6MqkQng4k3VJh3896y3FBAB5qiubAuNt2-7WP-NOAAq-k_3myvyqOwkIcgqnlyCZ_TnayigSwBuiGnfMQ8AUl6vO05UuqGWhuaZNzduW826wI6P8_sjGZLv8f_ZTf5v2WHiK1RhEN-VnbQMV6nMDRtMS9n4M7KiFcGXkQn3KRsfYCTxtia0yXpaReACHm3mJt5xTNmunQ0tr62d49Quqhd0aoTqvHA
+*/
+
+
+
