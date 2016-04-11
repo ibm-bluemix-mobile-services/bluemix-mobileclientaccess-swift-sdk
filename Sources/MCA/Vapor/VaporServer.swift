@@ -8,27 +8,32 @@
 
 import Foundation
 import Vapor
+import JSON
 
 public class VaporServer {
 	private let logger = Logger(forName:"VaporServer")
 
-	public func start(){
-		logger.info("Starting")
+	public func start(onPort port:Int){
+		logger.info("Staring on port " + String(port))
 		let app = Application()
-
-		app.middleware.append(MCAVaporMiddleware())
+		
+		app.middleware.removeLast()
+		app.middleware.append(MCAVaporMiddleware(hash: app.hash))
 
 		app.get("/public") { request in
 			return "Hello from a public resource!"
 		}
+		
 		app.get("/protected") { request in
+			if let mcaAuthContext = request.session?["MCAAuthContext"]{
+				print(mcaAuthContext)
+			}
+			
 			return "Hello from a protected resource!"
 		}
 
-		let environmentVars = NSProcessInfo.processInfo().environment
-		let portString: String = environmentVars["PORT"] ?? environmentVars["CF_INSTANCE_PORT"] ?? environmentVars["VCAP_APP_PORT"] ?? "8090";
-
-		logger.info("Staring on port " + portString)
-		app.start(port: Int(portString))
+		app.start(port: port)
 	}
 }
+
+

@@ -10,8 +10,14 @@ import Foundation
 import Vapor
 
 public class MCAVaporMiddleware: Middleware {
-	public func respond(request: Request, chain: Responder) throws -> Response {
+	
+    var driver: SessionDriver
 
+	init(hash:Hash) {
+		driver = MemorySessionDriver(hash:hash)
+    }
+
+	public func respond(request: Request, chain: Responder) throws -> Response {
 		let headers = request.headers.headers
 		let authHeaders = headers["Authorization"]
 		let authHeader = authHeaders?[0]
@@ -20,13 +26,14 @@ public class MCAVaporMiddleware: Middleware {
 		guard authContext != nil else {
 			return Response(status: .unauthorized, text: MCAError.Unauthorized.rawValue)
 		}
-
-		let chainResponse = try? chain.respond(request)
-
-		if let chainResponse = chainResponse{
-			return chainResponse
-		} else {
-			return Response(status: .serviceUnavailable)
+		
+		var request = request
+		if (request.session == nil){
+			request.session = Session(driver: driver)
 		}
+
+		request.session?["MCAAuthContext"] = authContext?.json.rawString()
+		return try chain.respond(request)
 	}
 }
+

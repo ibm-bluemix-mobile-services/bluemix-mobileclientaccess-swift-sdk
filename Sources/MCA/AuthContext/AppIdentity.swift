@@ -11,20 +11,24 @@
 *     limitations under the License.
 */
 
-/// This class represents the base user identity class, with default methods and keys
+/// This class represents the base app identity class, with default methods and keys
+
 import SwiftyJSON
 
-public class UserIdentity {
-	
-	public let id: String?
-	public let authBy: String?
-	public let displayName: String?
-	public let attributes: Dictionary<String, AnyObject?>?
-	
-	internal init(id: String, authBy: String, displayName: String, attributes: Dictionary<String, AnyObject?>?) {
-		self.id = id
-		self.authBy = authBy
-		self.displayName = displayName
-		self.attributes = attributes
+public class AppIdentity{
+	public var id:String {
+		get {
+			return json["id"].stringValue
+		}
+	}
+	public var version:String {
+		get {
+			return json["version"].stringValue
+		}
+	}
+	internal let json:JSON
+
+	internal init(json:JSON) {
+		self.json = json
 	}
 }

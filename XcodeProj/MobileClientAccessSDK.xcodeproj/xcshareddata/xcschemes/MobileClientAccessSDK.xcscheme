@@ -14,6 +14,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "______Target_SwiftyJSON"
+               BuildableName = "libSwiftyJSON.dylib"
+               BlueprintName = "SwiftyJSON"
+               ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "______Target_CFEnvironment"
+               BuildableName = "libCFEnvironment.dylib"
+               BlueprintName = "CFEnvironment"
+               ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "______Target_C7"
                BuildableName = "libC7.dylib"
                BlueprintName = "C7"
@@ -238,23 +266,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_SwiftyJSON"
-               BuildableName = "libSwiftyJSON.dylib"
-               BlueprintName = "SwiftyJSON"
-               ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_MobileClientAccessSDK"
-               BuildableName = "MobileClientAccessSDK"
-               BlueprintName = "MobileClientAccessSDK"
+               BlueprintIdentifier = "______Target_MCA"
+               BuildableName = "MCA"
+               BlueprintName = "MCA"
                ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -266,6 +280,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "______Target_CFEnvironmentTestSuite"
+               BuildableName = "CFEnvironment.testsuite.xctest"
+               BlueprintName = "CFEnvironment.testsuite"
+               ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -333,9 +357,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "______Target_C7"
-            BuildableName = "libC7.dylib"
-            BlueprintName = "C7"
+            BlueprintIdentifier = "______Target_SwiftyJSON"
+            BuildableName = "libSwiftyJSON.dylib"
+            BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:MobileClientAccessSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

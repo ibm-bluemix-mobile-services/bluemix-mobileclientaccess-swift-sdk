@@ -21,6 +21,7 @@ public class MobileClientAccessSDK{
 		}
 		
 		let authHeaderComponents:[String]! = authorizationHeader?.componentsSeparated(by: " ")
+
 		// authHeader format :: Bearer accessToken idToken
 		guard authHeaderComponents?.count == 3 else {
 			logger.error(MCAErrorInternal.InvalidAuthHeaderFormat.rawValue)
@@ -58,7 +59,7 @@ public class MobileClientAccessSDK{
 		logger.debug("getAuthorizedIdentities:from:")
 		
 		if let jwt = try? parseToken(from: idToken) {
-			return AuthorizationContext(idToken: jwt)
+			return AuthorizationContext.from(idTokenPayload: jwt["payload"])!
 		} else {
 			throw MCAError.Unauthorized
 		}

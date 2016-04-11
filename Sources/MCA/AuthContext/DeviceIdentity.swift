@@ -16,15 +16,33 @@
 import SwiftyJSON
 
 public class DeviceIdentity {
-	public let id:String?
-	public let OS:String
-	public let OSVersion:String?
-	public let model:String?
+	
+	public var id:String {
+		get {
+			return json["id"].stringValue
+		}
+	}
+
+	public var OS:String{
+		get {
+			return json["platform"].stringValue
+		}
+	}
+
+	public var OSVersion:String{
+		get {
+			return json["osVersion"].stringValue
+		}
+	}
+
+	public var model:String{
+		get {
+			return json["model"].stringValue
+		}
+	}
+	internal let json:JSON
 	
 	internal init(json: JSON) {
-		self.id = json["id"].stringValue
-		self.OS = json["platform"].stringValue
-		self.OSVersion = json["osVersion"].stringValue
-		self.model = json["model"].stringValue
+		self.json = json
 	}
 }

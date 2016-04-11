@@ -10,6 +10,7 @@ import Foundation
 
 public enum MCAError: String, ErrorProtocol{
 	case Unauthorized = "Unauthorized"
+	case FailedParsingAuthContext = "Failed to parse authorization context"
 }
 
 internal enum MCAErrorInternal: String, ErrorProtocol {

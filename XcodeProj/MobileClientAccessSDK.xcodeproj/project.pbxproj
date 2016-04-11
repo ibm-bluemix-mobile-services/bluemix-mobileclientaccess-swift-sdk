@@ -7,103 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AAA9D321CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D331CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D341CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D351CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D361CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D371CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D381CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D391CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D3A1CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D3B1CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D3C1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D3D1CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D3E1CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D3F1CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D401CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D411CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D421CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D431CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D441CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D451CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D461CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D471CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D481CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D491CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D4A1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D4B1CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D4C1CBB223900A95BCB /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
-		3AAA9D4D1CBB223900A95BCB /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
-		3AAA9D4E1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D4F1CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D501CBB223900A95BCB /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
-		3AAA9D511CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D521CBB223900A95BCB /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
-		3AAA9D531CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D541CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D551CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D561CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D571CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D581CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D591CBB223900A95BCB /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
-		3AAA9D5A1CBB223900A95BCB /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
-		3AAA9D5B1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D5C1CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D5D1CBB223900A95BCB /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
-		3AAA9D5E1CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D5F1CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D601CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D611CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D621CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D631CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D641CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D651CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D661CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D671CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D681CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D691CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D6A1CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D6B1CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D6C1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D6D1CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D6E1CBB223900A95BCB /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
-		3AAA9D6F1CBB223900A95BCB /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
-		3AAA9D701CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D711CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D721CBB223900A95BCB /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
-		3AAA9D731CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D741CBB223900A95BCB /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
-		3AAA9D751CBB223900A95BCB /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
-		3AAA9D761CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D771CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D781CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D791CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D7A1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D7B1CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D7C1CBB223900A95BCB /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
-		3AAA9D7D1CBB223900A95BCB /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
-		3AAA9D7E1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D7F1CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D801CBB223900A95BCB /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
-		3AAA9D811CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D821CBB223900A95BCB /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
-		3AAA9D831CBB223900A95BCB /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
-		3AAA9D841CBB223900A95BCB /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
-		3AAA9D851CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
-		3AAA9D861CBB223900A95BCB /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		3AAA9D871CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
-		3AAA9D881CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
-		3AAA9D891CBB223900A95BCB /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		3AAA9D8A1CBB223900A95BCB /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
-		3AAA9D8B1CBB223900A95BCB /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
-		3AAA9D8C1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		3AAA9D8D1CBB223900A95BCB /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
-		3AAA9D8E1CBB223900A95BCB /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
-		3AAA9D8F1CBB223900A95BCB /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		3AAA9D901CBB223900A95BCB /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
-		3AAA9D911CBB223900A95BCB /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
+		3A45C5E11CBC55D30058389A /* libSwiftyJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* libSwiftyJSON.dylib */; };
+		3A45C5E21CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5E31CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5E41CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5E51CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C5E61CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5E71CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C5E81CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5E91CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C5EA1CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C5EB1CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5EC1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C5ED1CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C5EE1CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C5EF1CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5F01CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5F11CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C5F21CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5F31CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5F41CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5F51CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C5F61CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C5F71CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C5F81CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C5F91CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C5FA1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C5FB1CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C5FC1CBC55D30058389A /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
+		3A45C5FD1CBC55D30058389A /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
+		3A45C5FE1CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C5FF1CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C6001CBC55D30058389A /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
+		3A45C6011CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C6021CBC55D30058389A /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
+		3A45C6031CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C6041CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C6051CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C6061CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C6071CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C6081CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C6091CBC55D30058389A /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
+		3A45C60A1CBC55D30058389A /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
+		3A45C60B1CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C60C1CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C60D1CBC55D30058389A /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
+		3A45C60E1CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C60F1CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C6101CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C6111CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C6121CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C6131CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C6141CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C6151CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C6161CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C6171CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C6181CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C6191CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C61A1CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C61B1CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C61C1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C61D1CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C61E1CBC55D30058389A /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
+		3A45C61F1CBC55D30058389A /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
+		3A45C6201CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C6211CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C6221CBC55D30058389A /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
+		3A45C6231CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C6241CBC55D30058389A /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
+		3A45C6251CBC55D30058389A /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
+		3A45C6261CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C6271CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C6281CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C6291CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C62A1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C62B1CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C62C1CBC55D30058389A /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
+		3A45C62D1CBC55D30058389A /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
+		3A45C62E1CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C62F1CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C6301CBC55D30058389A /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
+		3A45C6311CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C6321CBC55D30058389A /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
+		3A45C6331CBC55D30058389A /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
+		3A45C6341CBC55D30058389A /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
+		3A45C6351CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
+		3A45C6361CBC55D30058389A /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
+		3A45C6371CBC55D30058389A /* libInterchangeData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_InterchangeData" /* libInterchangeData.dylib */; };
+		3A45C6381CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_OperatingSystem" /* libOperatingSystem.dylib */; };
+		3A45C6391CBC55D30058389A /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		3A45C63A1CBC55D30058389A /* libSHA2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SHA2" /* libSHA2.dylib */; };
+		3A45C63B1CBC55D30058389A /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
+		3A45C63C1CBC55D30058389A /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
+		3A45C63D1CBC55D30058389A /* libJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* libJSON.dylib */; };
+		3A45C63E1CBC55D30058389A /* libString.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_String" /* libString.dylib */; };
+		3A45C63F1CBC55D30058389A /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
+		3A45C6401CBC55D30058389A /* liblibc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* liblibc.dylib */; };
+		3A45C6411CBC55D30058389A /* libVapor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* libVapor.dylib */; };
+		3A45C6421CBC55D30058389A /* libSwiftyJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* libSwiftyJSON.dylib */; };
+		3A45C6431CBC55D30058389A /* libCFEnvironment.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CFEnvironment" /* libCFEnvironment.dylib */; };
 		_LinkFileRef_C7 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
+		_LinkFileRef_CFEnvironment /* libCFEnvironment.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CFEnvironment" /* libCFEnvironment.dylib */; };
 		_LinkFileRef_CryptoEssentials /* libCryptoEssentials.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */; };
 		_LinkFileRef_Data /* libData.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Data" /* libData.dylib */; };
 		_LinkFileRef_HMAC /* libHMAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* libHMAC.dylib */; };
@@ -133,6 +137,15 @@
 		"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift */; };
 		"__src_cc_ref_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift */; };
 		"__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/App.swift" /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/App.swift" /* App.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/AppEnv.swift" /* AppEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/AppEnv.swift" /* AppEnv.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironment.swift" /* CFEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironment.swift" /* CFEnvironment.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironmentError.swift" /* CFEnvironmentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironmentError.swift" /* CFEnvironmentError.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/DateUtils.swift" /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/DateUtils.swift" /* DateUtils.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/JSONUtils.swift" /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/JSONUtils.swift" /* JSONUtils.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/Service.swift" /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/Service.swift" /* Service.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/MainTests.swift" /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/MainTests.swift" /* MainTests.swift */; };
+		"__src_cc_ref_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/UtilsTests.swift" /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/UtilsTests.swift" /* UtilsTests.swift */; };
 		"__src_cc_ref_Packages/CryptoEssentials-0.2.1/Sources/BytesSequence.swift" /* BytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/BytesSequence.swift" /* BytesSequence.swift */; };
 		"__src_cc_ref_Packages/CryptoEssentials-0.2.1/Sources/CSArrayType+Extension.swift" /* CSArrayType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/CSArrayType+Extension.swift" /* CSArrayType+Extension.swift */; };
 		"__src_cc_ref_Packages/CryptoEssentials-0.2.1/Sources/Generics.swift" /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/Generics.swift" /* Generics.swift */; };
@@ -268,124 +281,131 @@
 		"__src_cc_ref_Packages/Vapor-0.5.2/Tests/Vapor/SessionTests.swift" /* SessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/SessionTests.swift" /* SessionTests.swift */; };
 		"__src_cc_ref_Packages/Vapor-0.5.2/Tests/Vapor/TestHTTPStream.swift" /* TestHTTPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/TestHTTPStream.swift" /* TestHTTPStream.swift */; };
 		"__src_cc_ref_Packages/Vapor-0.5.2/Tests/Vapor/TypedRouteTests.swift" /* TypedRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/TypedRouteTests.swift" /* TypedRouteTests.swift */; };
-		__src_cc_ref_Sources/AppIdentity.swift /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AppIdentity.swift /* AppIdentity.swift */; };
-		__src_cc_ref_Sources/AuthorizationContext.swift /* AuthorizationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AuthorizationContext.swift /* AuthorizationContext.swift */; };
-		__src_cc_ref_Sources/DeviceIdentity.swift /* DeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/DeviceIdentity.swift /* DeviceIdentity.swift */; };
-		__src_cc_ref_Sources/Logger.swift /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Logger.swift /* Logger.swift */; };
-		__src_cc_ref_Sources/MCAError.swift /* MCAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCAError.swift /* MCAError.swift */; };
-		__src_cc_ref_Sources/MCAVaporMiddleware.swift /* MCAVaporMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCAVaporMiddleware.swift /* MCAVaporMiddleware.swift */; };
-		__src_cc_ref_Sources/MobileClientAccessSDK.swift /* MobileClientAccessSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MobileClientAccessSDK.swift /* MobileClientAccessSDK.swift */; };
-		"__src_cc_ref_Sources/String+Base64.swift" /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/String+Base64.swift" /* String+Base64.swift */; };
-		__src_cc_ref_Sources/UserIdentity.swift /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/UserIdentity.swift /* UserIdentity.swift */; };
-		__src_cc_ref_Sources/VaporServer.swift /* VaporServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/VaporServer.swift /* VaporServer.swift */; };
-		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
+		__src_cc_ref_Sources/MCA/AuthContext/AppIdentity.swift /* AuthContext/AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/AuthContext/AppIdentity.swift /* AuthContext/AppIdentity.swift */; };
+		__src_cc_ref_Sources/MCA/AuthContext/AuthorizationContext.swift /* AuthContext/AuthorizationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/AuthContext/AuthorizationContext.swift /* AuthContext/AuthorizationContext.swift */; };
+		__src_cc_ref_Sources/MCA/AuthContext/DeviceIdentity.swift /* AuthContext/DeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/AuthContext/DeviceIdentity.swift /* AuthContext/DeviceIdentity.swift */; };
+		__src_cc_ref_Sources/MCA/AuthContext/UserIdentity.swift /* AuthContext/UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/AuthContext/UserIdentity.swift /* AuthContext/UserIdentity.swift */; };
+		__src_cc_ref_Sources/MCA/Core/MCAError.swift /* Core/MCAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/Core/MCAError.swift /* Core/MCAError.swift */; };
+		__src_cc_ref_Sources/MCA/Core/MobileClientAccessSDK.swift /* Core/MobileClientAccessSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/Core/MobileClientAccessSDK.swift /* Core/MobileClientAccessSDK.swift */; };
+		__src_cc_ref_Sources/MCA/Utils/Logger.swift /* Utils/Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/Utils/Logger.swift /* Utils/Logger.swift */; };
+		"__src_cc_ref_Sources/MCA/Utils/String+Base64.swift" /* Utils/String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/MCA/Utils/String+Base64.swift" /* Utils/String+Base64.swift */; };
+		__src_cc_ref_Sources/MCA/Vapor/MCAVaporMiddleware.swift /* Vapor/MCAVaporMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/Vapor/MCAVaporMiddleware.swift /* Vapor/MCAVaporMiddleware.swift */; };
+		__src_cc_ref_Sources/MCA/Vapor/VaporServer.swift /* Vapor/VaporServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/Vapor/VaporServer.swift /* Vapor/VaporServer.swift */; };
+		__src_cc_ref_Sources/MCA/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/MCA/main.swift /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AAA9D921CBB223900A95BCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_C7";
-			remoteInfo = C7;
-		};
-		3AAA9D931CBB223900A95BCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_OperatingSystem";
-			remoteInfo = OperatingSystem;
-		};
-		3AAA9D941CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6441CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Data";
 			remoteInfo = Data;
 		};
-		3AAA9D951CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6451CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "______Target_InterchangeData";
-			remoteInfo = InterchangeData;
+			remoteGlobalIDString = "______Target_C7";
+			remoteInfo = C7;
 		};
-		3AAA9D961CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6461CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "______Target_Strand";
-			remoteInfo = Strand;
+			remoteGlobalIDString = "______Target_OperatingSystem";
+			remoteInfo = OperatingSystem;
 		};
-		3AAA9D971CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6471CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_CryptoEssentials";
 			remoteInfo = CryptoEssentials;
 		};
-		3AAA9D981CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6481CBC55D50058389A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Strand";
+			remoteInfo = Strand;
+		};
+		3A45C6491CBC55D50058389A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_InterchangeData";
+			remoteInfo = InterchangeData;
+		};
+		3A45C64A1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_SHA2";
 			remoteInfo = SHA2;
 		};
-		3AAA9D991CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C64B1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_HMAC";
 			remoteInfo = HMAC;
 		};
-		3AAA9D9A1CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C64C1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Hummingbird";
 			remoteInfo = Hummingbird;
 		};
-		3AAA9D9B1CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C64D1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_JSON";
 			remoteInfo = JSON;
 		};
-		3AAA9D9C1CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C64E1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_String";
 			remoteInfo = String;
 		};
-		3AAA9D9D1CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C64F1CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_S4";
 			remoteInfo = S4;
 		};
-		3AAA9D9E1CBB223900A95BCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_Vapor";
-			remoteInfo = Vapor;
-		};
-		3AAA9D9F1CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6501CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_libc";
 			remoteInfo = libc;
 		};
-		3AAA9DA01CBB223900A95BCB /* PBXContainerItemProxy */ = {
+		3A45C6511CBC55D50058389A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Vapor";
+			remoteInfo = Vapor;
+		};
+		3A45C6521CBC55D50058389A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_SwiftyJSON";
 			remoteInfo = SwiftyJSON;
+		};
+		3A45C6531CBC55D50058389A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_CFEnvironment";
+			remoteInfo = CFEnvironment;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -406,6 +426,15 @@
 		"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamServer.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/App.swift" /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/AppEnv.swift" /* AppEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnv.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironment.swift" /* CFEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFEnvironment.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironmentError.swift" /* CFEnvironmentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFEnvironmentError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/DateUtils.swift" /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/JSONUtils.swift" /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/Service.swift" /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/MainTests.swift" /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/UtilsTests.swift" /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/BytesSequence.swift" /* BytesSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytesSequence.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/CSArrayType+Extension.swift" /* CSArrayType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CSArrayType+Extension.swift"; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/CryptoEssentials-0.2.1/Sources/Generics.swift" /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
@@ -541,39 +570,41 @@
 		"__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/SessionTests.swift" /* SessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/TestHTTPStream.swift" /* TestHTTPStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHTTPStream.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Vapor-0.5.2/Tests/Vapor/TypedRouteTests.swift" /* TypedRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedRouteTests.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/AppIdentity.swift /* AppIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdentity.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/AuthorizationContext.swift /* AuthorizationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationContext.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/DeviceIdentity.swift /* DeviceIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentity.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Logger.swift /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/MCAError.swift /* MCAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCAError.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/MCAVaporMiddleware.swift /* MCAVaporMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCAVaporMiddleware.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/MobileClientAccessSDK.swift /* MobileClientAccessSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileClientAccessSDK.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Sources/String+Base64.swift" /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/UserIdentity.swift /* UserIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentity.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/VaporServer.swift /* VaporServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporServer.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/AuthContext/AppIdentity.swift /* AuthContext/AppIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext/AppIdentity.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/AuthContext/AuthorizationContext.swift /* AuthContext/AuthorizationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext/AuthorizationContext.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/AuthContext/DeviceIdentity.swift /* AuthContext/DeviceIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext/DeviceIdentity.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/AuthContext/UserIdentity.swift /* AuthContext/UserIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext/UserIdentity.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/Core/MCAError.swift /* Core/MCAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/MCAError.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/Core/MobileClientAccessSDK.swift /* Core/MobileClientAccessSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/MobileClientAccessSDK.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/Utils/Logger.swift /* Utils/Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils/Logger.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Sources/MCA/Utils/String+Base64.swift" /* Utils/String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils/String+Base64.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/Vapor/MCAVaporMiddleware.swift /* Vapor/MCAVaporMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vapor/MCAVaporMiddleware.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/Vapor/VaporServer.swift /* Vapor/VaporServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vapor/VaporServer.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/MCA/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		"_____Product_C7" /* libC7.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libC7.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_C7TestSuite" /* C7TestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = C7TestSuite.xctest; path = C7.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_C7TestSuite" /* C7.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = C7.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_CFEnvironment" /* libCFEnvironment.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libCFEnvironment.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_CFEnvironmentTestSuite" /* CFEnvironment.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CFEnvironment.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_CryptoEssentials" /* libCryptoEssentials.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libCryptoEssentials.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Data" /* libData.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libData.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Development" /* Development */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Development; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_HMAC" /* libHMAC.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libHMAC.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Hummingbird" /* libHummingbird.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libHummingbird.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = HummingbirdTestSuite.xctest; path = Hummingbird.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_HummingbirdTestSuite" /* Hummingbird.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Hummingbird.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_InterchangeData" /* libInterchangeData.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libInterchangeData.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_JSON" /* libJSON.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libJSON.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_JSONTestSuite" /* JSONTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = JSONTestSuite.xctest; path = JSON.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_MobileClientAccessSDK" /* MobileClientAccessSDK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MobileClientAccessSDK; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_JSONTestSuite" /* JSON.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = JSON.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_MCA" /* MCA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MCA; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_OperatingSystem" /* libOperatingSystem.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libOperatingSystem.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Performance" /* Performance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Performance; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_S4" /* libS4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libS4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_S4TestSuite" /* S4TestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = S4TestSuite.xctest; path = S4.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_S4TestSuite" /* S4.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = S4.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_SHA2" /* libSHA2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libSHA2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Strand" /* libStrand.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libStrand.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_String" /* libString.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libString.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_SwiftyJSON" /* libSwiftyJSON.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libSwiftyJSON.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Vapor" /* libVapor.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libVapor.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_VaporTestSuite" /* VaporTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = VaporTestSuite.xctest; path = Vapor.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_VaporTestSuite" /* Vapor.testsuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Vapor.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_libc" /* liblibc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = liblibc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -593,11 +624,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		"___LinkPhase_CFEnvironment" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SwiftyJSON /* libSwiftyJSON.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_CFEnvironmentTestSuite" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				3A45C5E11CBC55D30058389A /* libSwiftyJSON.dylib in Frameworks */,
+				_LinkFileRef_CFEnvironment /* libCFEnvironment.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		"___LinkPhase_CryptoEssentials" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D421CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C5F21CBC55D30058389A /* libC7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,8 +653,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D341CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D351CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
+				3A45C5E41CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5E51CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,20 +662,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D461CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D471CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D481CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D491CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D4A1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D4B1CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D4C1CBB223900A95BCB /* libSHA2.dylib in Frameworks */,
-				3AAA9D4D1CBB223900A95BCB /* libHMAC.dylib in Frameworks */,
-				3AAA9D4E1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D4F1CBB223900A95BCB /* libJSON.dylib in Frameworks */,
-				3AAA9D501CBB223900A95BCB /* libString.dylib in Frameworks */,
-				3AAA9D511CBB223900A95BCB /* libS4.dylib in Frameworks */,
+				3A45C5F61CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C5F71CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C5F81CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C5F91CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C5FA1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C5FB1CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5FC1CBC55D30058389A /* libSHA2.dylib in Frameworks */,
+				3A45C5FD1CBC55D30058389A /* libHMAC.dylib in Frameworks */,
+				3A45C5FE1CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C5FF1CBC55D30058389A /* libJSON.dylib in Frameworks */,
+				3A45C6001CBC55D30058389A /* libString.dylib in Frameworks */,
+				3A45C6011CBC55D30058389A /* libS4.dylib in Frameworks */,
 				_LinkFileRef_Vapor /* libVapor.dylib in Frameworks */,
-				3AAA9D521CBB223900A95BCB /* liblibc.dylib in Frameworks */,
+				3A45C6021CBC55D30058389A /* liblibc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +683,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D431CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C5F31CBC55D30058389A /* libC7.dylib in Frameworks */,
 				_LinkFileRef_CryptoEssentials /* libCryptoEssentials.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,7 +692,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D3F1CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C5EF1CBC55D30058389A /* libC7.dylib in Frameworks */,
 				_LinkFileRef_Strand /* libStrand.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,8 +701,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D401CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D411CBB223900A95BCB /* libStrand.dylib in Frameworks */,
+				3A45C5F01CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5F11CBC55D30058389A /* libStrand.dylib in Frameworks */,
 				_LinkFileRef_Hummingbird /* libHummingbird.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,8 +711,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D361CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D371CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
+				3A45C5E61CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5E71CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
 				_LinkFileRef_Data /* libData.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,9 +721,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D381CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D391CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D3A1CBB223900A95BCB /* libData.dylib in Frameworks */,
+				3A45C5E81CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5E91CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C5EA1CBC55D30058389A /* libData.dylib in Frameworks */,
 				_LinkFileRef_InterchangeData /* libInterchangeData.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,33 +732,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D3B1CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D3C1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D3D1CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D3E1CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
+				3A45C5EB1CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5EC1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C5ED1CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C5EE1CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
 				_LinkFileRef_JSON /* libJSON.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		"___LinkPhase_MobileClientAccessSDK" /* Frameworks */ = {
+		"___LinkPhase_MCA" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D841CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D851CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D861CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D871CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D881CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D891CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D8A1CBB223900A95BCB /* libSHA2.dylib in Frameworks */,
-				3AAA9D8B1CBB223900A95BCB /* libHMAC.dylib in Frameworks */,
-				3AAA9D8C1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D8D1CBB223900A95BCB /* libJSON.dylib in Frameworks */,
-				3AAA9D8E1CBB223900A95BCB /* libString.dylib in Frameworks */,
-				3AAA9D8F1CBB223900A95BCB /* libS4.dylib in Frameworks */,
-				_LinkFileRef_SwiftyJSON /* libSwiftyJSON.dylib in Frameworks */,
-				3AAA9D901CBB223900A95BCB /* liblibc.dylib in Frameworks */,
-				3AAA9D911CBB223900A95BCB /* libVapor.dylib in Frameworks */,
+				3A45C6341CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C6351CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C6361CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C6371CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C6381CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C6391CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C63A1CBC55D30058389A /* libSHA2.dylib in Frameworks */,
+				3A45C63B1CBC55D30058389A /* libHMAC.dylib in Frameworks */,
+				3A45C63C1CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C63D1CBC55D30058389A /* libJSON.dylib in Frameworks */,
+				3A45C63E1CBC55D30058389A /* libString.dylib in Frameworks */,
+				3A45C63F1CBC55D30058389A /* libS4.dylib in Frameworks */,
+				3A45C6401CBC55D30058389A /* liblibc.dylib in Frameworks */,
+				3A45C6411CBC55D30058389A /* libVapor.dylib in Frameworks */,
+				3A45C6421CBC55D30058389A /* libSwiftyJSON.dylib in Frameworks */,
+				3A45C6431CBC55D30058389A /* libCFEnvironment.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,20 +774,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D681CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D691CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D6A1CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D6B1CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D6C1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D6D1CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D6E1CBB223900A95BCB /* libSHA2.dylib in Frameworks */,
-				3AAA9D6F1CBB223900A95BCB /* libHMAC.dylib in Frameworks */,
-				3AAA9D701CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D711CBB223900A95BCB /* libJSON.dylib in Frameworks */,
-				3AAA9D721CBB223900A95BCB /* libString.dylib in Frameworks */,
-				3AAA9D731CBB223900A95BCB /* libS4.dylib in Frameworks */,
-				3AAA9D741CBB223900A95BCB /* libVapor.dylib in Frameworks */,
-				3AAA9D751CBB223900A95BCB /* liblibc.dylib in Frameworks */,
+				3A45C6181CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C6191CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C61A1CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C61B1CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C61C1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C61D1CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C61E1CBC55D30058389A /* libSHA2.dylib in Frameworks */,
+				3A45C61F1CBC55D30058389A /* libHMAC.dylib in Frameworks */,
+				3A45C6201CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C6211CBC55D30058389A /* libJSON.dylib in Frameworks */,
+				3A45C6221CBC55D30058389A /* libString.dylib in Frameworks */,
+				3A45C6231CBC55D30058389A /* libS4.dylib in Frameworks */,
+				3A45C6241CBC55D30058389A /* libVapor.dylib in Frameworks */,
+				3A45C6251CBC55D30058389A /* liblibc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,7 +795,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D321CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C5E21CBC55D30058389A /* libC7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,7 +803,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D331CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C5E31CBC55D30058389A /* libC7.dylib in Frameworks */,
 				_LinkFileRef_S4 /* libS4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,8 +812,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D441CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D451CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C5F41CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C5F51CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,18 +843,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D531CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D541CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D551CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D561CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D571CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D581CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D591CBB223900A95BCB /* libSHA2.dylib in Frameworks */,
-				3AAA9D5A1CBB223900A95BCB /* libHMAC.dylib in Frameworks */,
-				3AAA9D5B1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D5C1CBB223900A95BCB /* libJSON.dylib in Frameworks */,
-				3AAA9D5D1CBB223900A95BCB /* libString.dylib in Frameworks */,
-				3AAA9D5E1CBB223900A95BCB /* libS4.dylib in Frameworks */,
+				3A45C6031CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C6041CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C6051CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C6061CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C6071CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C6081CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C6091CBC55D30058389A /* libSHA2.dylib in Frameworks */,
+				3A45C60A1CBC55D30058389A /* libHMAC.dylib in Frameworks */,
+				3A45C60B1CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C60C1CBC55D30058389A /* libJSON.dylib in Frameworks */,
+				3A45C60D1CBC55D30058389A /* libString.dylib in Frameworks */,
+				3A45C60E1CBC55D30058389A /* libS4.dylib in Frameworks */,
 				_LinkFileRef_libc /* liblibc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -814,20 +863,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D761CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D771CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D781CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D791CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D7A1CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D7B1CBB223900A95BCB /* libC7.dylib in Frameworks */,
-				3AAA9D7C1CBB223900A95BCB /* libSHA2.dylib in Frameworks */,
-				3AAA9D7D1CBB223900A95BCB /* libHMAC.dylib in Frameworks */,
-				3AAA9D7E1CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D7F1CBB223900A95BCB /* libJSON.dylib in Frameworks */,
-				3AAA9D801CBB223900A95BCB /* libString.dylib in Frameworks */,
-				3AAA9D811CBB223900A95BCB /* libS4.dylib in Frameworks */,
-				3AAA9D821CBB223900A95BCB /* libVapor.dylib in Frameworks */,
-				3AAA9D831CBB223900A95BCB /* liblibc.dylib in Frameworks */,
+				3A45C6261CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C6271CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C6281CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C6291CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C62A1CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C62B1CBC55D30058389A /* libC7.dylib in Frameworks */,
+				3A45C62C1CBC55D30058389A /* libSHA2.dylib in Frameworks */,
+				3A45C62D1CBC55D30058389A /* libHMAC.dylib in Frameworks */,
+				3A45C62E1CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C62F1CBC55D30058389A /* libJSON.dylib in Frameworks */,
+				3A45C6301CBC55D30058389A /* libString.dylib in Frameworks */,
+				3A45C6311CBC55D30058389A /* libS4.dylib in Frameworks */,
+				3A45C6321CBC55D30058389A /* libVapor.dylib in Frameworks */,
+				3A45C6331CBC55D30058389A /* liblibc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,18 +884,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3AAA9D5F1CBB223900A95BCB /* libData.dylib in Frameworks */,
-				3AAA9D601CBB223900A95BCB /* libCryptoEssentials.dylib in Frameworks */,
-				3AAA9D611CBB223900A95BCB /* libStrand.dylib in Frameworks */,
-				3AAA9D621CBB223900A95BCB /* libInterchangeData.dylib in Frameworks */,
-				3AAA9D631CBB223900A95BCB /* libOperatingSystem.dylib in Frameworks */,
-				3AAA9D641CBB223900A95BCB /* libC7.dylib in Frameworks */,
+				3A45C60F1CBC55D30058389A /* libData.dylib in Frameworks */,
+				3A45C6101CBC55D30058389A /* libCryptoEssentials.dylib in Frameworks */,
+				3A45C6111CBC55D30058389A /* libStrand.dylib in Frameworks */,
+				3A45C6121CBC55D30058389A /* libInterchangeData.dylib in Frameworks */,
+				3A45C6131CBC55D30058389A /* libOperatingSystem.dylib in Frameworks */,
+				3A45C6141CBC55D30058389A /* libC7.dylib in Frameworks */,
 				_LinkFileRef_SHA2 /* libSHA2.dylib in Frameworks */,
 				_LinkFileRef_HMAC /* libHMAC.dylib in Frameworks */,
-				3AAA9D651CBB223900A95BCB /* libHummingbird.dylib in Frameworks */,
-				3AAA9D661CBB223900A95BCB /* libJSON.dylib in Frameworks */,
+				3A45C6151CBC55D30058389A /* libHummingbird.dylib in Frameworks */,
+				3A45C6161CBC55D30058389A /* libJSON.dylib in Frameworks */,
 				_LinkFileRef_String /* libString.dylib in Frameworks */,
-				3AAA9D671CBB223900A95BCB /* libS4.dylib in Frameworks */,
+				3A45C6171CBC55D30058389A /* libS4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,11 +905,12 @@
 		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				"_____Product_C7TestSuite" /* C7TestSuite.xctest */,
-				"_____Product_S4TestSuite" /* S4TestSuite.xctest */,
-				"_____Product_JSONTestSuite" /* JSONTestSuite.xctest */,
-				"_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */,
-				"_____Product_VaporTestSuite" /* VaporTestSuite.xctest */,
+				"_____Product_CFEnvironmentTestSuite" /* CFEnvironment.testsuite.xctest */,
+				"_____Product_C7TestSuite" /* C7.testsuite.xctest */,
+				"_____Product_S4TestSuite" /* S4.testsuite.xctest */,
+				"_____Product_JSONTestSuite" /* JSON.testsuite.xctest */,
+				"_____Product_HummingbirdTestSuite" /* Hummingbird.testsuite.xctest */,
+				"_____Product_VaporTestSuite" /* Vapor.testsuite.xctest */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -879,6 +929,8 @@
 			isa = PBXGroup;
 			children = (
 				TestProducts_ /* Tests */,
+				"_____Product_SwiftyJSON" /* libSwiftyJSON.dylib */,
+				"_____Product_CFEnvironment" /* libCFEnvironment.dylib */,
 				"_____Product_C7" /* libC7.dylib */,
 				"_____Product_S4" /* libS4.dylib */,
 				"_____Product_OperatingSystem" /* libOperatingSystem.dylib */,
@@ -895,8 +947,7 @@
 				"_____Product_libc" /* liblibc.dylib */,
 				"_____Product_Performance" /* Performance */,
 				"_____Product_Vapor" /* libVapor.dylib */,
-				"_____Product_SwiftyJSON" /* libSwiftyJSON.dylib */,
-				"_____Product_MobileClientAccessSDK" /* MobileClientAccessSDK */,
+				"_____Product_MCA" /* MCA */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -904,6 +955,8 @@
 		"_____Sources_" /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				"_______Group_SwiftyJSON" /* SwiftyJSON */,
+				"_______Group_CFEnvironment" /* CFEnvironment */,
 				"_______Group_C7" /* C7 */,
 				"_______Group_S4" /* S4 */,
 				"_______Group_OperatingSystem" /* OperatingSystem */,
@@ -920,8 +973,7 @@
 				"_______Group_libc" /* libc */,
 				"_______Group_Performance" /* Performance */,
 				"_______Group_Vapor" /* Vapor */,
-				"_______Group_SwiftyJSON" /* SwiftyJSON */,
-				"_______Group_MobileClientAccessSDK" /* MobileClientAccessSDK */,
+				"_______Group_MCA" /* MCA */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -955,6 +1007,31 @@
 			);
 			name = C7.testsuite;
 			path = "../Packages/C7-0.2.0/Tests/C7";
+			sourceTree = "<group>";
+		};
+		"_______Group_CFEnvironment" /* CFEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/App.swift" /* App.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/AppEnv.swift" /* AppEnv.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironment.swift" /* CFEnvironment.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironmentError.swift" /* CFEnvironmentError.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/DateUtils.swift" /* DateUtils.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/JSONUtils.swift" /* JSONUtils.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/Service.swift" /* Service.swift */,
+			);
+			name = CFEnvironment;
+			path = "../Packages/CFEnvironment-0.0.3/Sources/CFEnvironment";
+			sourceTree = "<group>";
+		};
+		"_______Group_CFEnvironmentTestSuite" /* CFEnvironment.testsuite */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/MainTests.swift" /* MainTests.swift */,
+				"__PBXFileRef_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/UtilsTests.swift" /* UtilsTests.swift */,
+			);
+			name = CFEnvironment.testsuite;
+			path = "../Packages/CFEnvironment-0.0.3/Tests/CFEnvironment";
 			sourceTree = "<group>";
 		};
 		"_______Group_CryptoEssentials" /* CryptoEssentials */ = {
@@ -1054,23 +1131,23 @@
 			path = "../Packages/JSON-0.4.2/Tests/JSON";
 			sourceTree = "<group>";
 		};
-		"_______Group_MobileClientAccessSDK" /* MobileClientAccessSDK */ = {
+		"_______Group_MCA" /* MCA */ = {
 			isa = PBXGroup;
 			children = (
-				__PBXFileRef_Sources/AppIdentity.swift /* AppIdentity.swift */,
-				__PBXFileRef_Sources/AuthorizationContext.swift /* AuthorizationContext.swift */,
-				__PBXFileRef_Sources/DeviceIdentity.swift /* DeviceIdentity.swift */,
-				__PBXFileRef_Sources/Logger.swift /* Logger.swift */,
-				__PBXFileRef_Sources/main.swift /* main.swift */,
-				__PBXFileRef_Sources/MCAError.swift /* MCAError.swift */,
-				__PBXFileRef_Sources/MCAVaporMiddleware.swift /* MCAVaporMiddleware.swift */,
-				__PBXFileRef_Sources/MobileClientAccessSDK.swift /* MobileClientAccessSDK.swift */,
-				"__PBXFileRef_Sources/String+Base64.swift" /* String+Base64.swift */,
-				__PBXFileRef_Sources/UserIdentity.swift /* UserIdentity.swift */,
-				__PBXFileRef_Sources/VaporServer.swift /* VaporServer.swift */,
+				__PBXFileRef_Sources/MCA/main.swift /* main.swift */,
+				__PBXFileRef_Sources/MCA/AuthContext/AppIdentity.swift /* AuthContext/AppIdentity.swift */,
+				__PBXFileRef_Sources/MCA/AuthContext/AuthorizationContext.swift /* AuthContext/AuthorizationContext.swift */,
+				__PBXFileRef_Sources/MCA/AuthContext/DeviceIdentity.swift /* AuthContext/DeviceIdentity.swift */,
+				__PBXFileRef_Sources/MCA/AuthContext/UserIdentity.swift /* AuthContext/UserIdentity.swift */,
+				__PBXFileRef_Sources/MCA/Core/MCAError.swift /* Core/MCAError.swift */,
+				__PBXFileRef_Sources/MCA/Core/MobileClientAccessSDK.swift /* Core/MobileClientAccessSDK.swift */,
+				__PBXFileRef_Sources/MCA/Utils/Logger.swift /* Utils/Logger.swift */,
+				"__PBXFileRef_Sources/MCA/Utils/String+Base64.swift" /* Utils/String+Base64.swift */,
+				__PBXFileRef_Sources/MCA/Vapor/MCAVaporMiddleware.swift /* Vapor/MCAVaporMiddleware.swift */,
+				__PBXFileRef_Sources/MCA/Vapor/VaporServer.swift /* Vapor/VaporServer.swift */,
 			);
-			name = MobileClientAccessSDK;
-			path = ../Sources;
+			name = MCA;
+			path = ../Sources/MCA;
 			sourceTree = "<group>";
 		};
 		"_______Group_OperatingSystem" /* OperatingSystem */ = {
@@ -1274,6 +1351,7 @@
 		"_______Tests_" /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				"_______Group_CFEnvironmentTestSuite" /* CFEnvironment.testsuite */,
 				"_______Group_C7TestSuite" /* C7.testsuite */,
 				"_______Group_S4TestSuite" /* S4.testsuite */,
 				"_______Group_JSONTestSuite" /* JSON.testsuite */,
@@ -1316,7 +1394,42 @@
 			);
 			name = C7.testsuite;
 			productName = C7TestSuite;
-			productReference = "_____Product_C7TestSuite" /* C7TestSuite.xctest */;
+			productReference = "_____Product_C7TestSuite" /* C7.testsuite.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"______Target_CFEnvironment" /* CFEnvironment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_CFEnvironment" /* Build configuration list for PBXNativeTarget "CFEnvironment" */;
+			buildPhases = (
+				CompilePhase_CFEnvironment /* Sources */,
+				"___LinkPhase_CFEnvironment" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+			);
+			name = CFEnvironment;
+			productName = CFEnvironment;
+			productReference = "_____Product_CFEnvironment" /* libCFEnvironment.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		"______Target_CFEnvironmentTestSuite" /* CFEnvironment.testsuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_CFEnvironmentTestSuite" /* Build configuration list for PBXNativeTarget "CFEnvironment.testsuite" */;
+			buildPhases = (
+				CompilePhase_CFEnvironmentTestSuite /* Sources */,
+				"___LinkPhase_CFEnvironmentTestSuite" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+				__Dependency_CFEnvironment /* PBXTargetDependency */,
+			);
+			name = CFEnvironment.testsuite;
+			productName = CFEnvironmentTestSuite;
+			productReference = "_____Product_CFEnvironmentTestSuite" /* CFEnvironment.testsuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"______Target_CryptoEssentials" /* CryptoEssentials */ = {
@@ -1435,7 +1548,7 @@
 			);
 			name = Hummingbird.testsuite;
 			productName = HummingbirdTestSuite;
-			productReference = "_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */;
+			productReference = "_____Product_HummingbirdTestSuite" /* Hummingbird.testsuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"______Target_InterchangeData" /* InterchangeData */ = {
@@ -1495,15 +1608,15 @@
 			);
 			name = JSON.testsuite;
 			productName = JSONTestSuite;
-			productReference = "_____Product_JSONTestSuite" /* JSONTestSuite.xctest */;
+			productReference = "_____Product_JSONTestSuite" /* JSON.testsuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"______Target_MobileClientAccessSDK" /* MobileClientAccessSDK */ = {
+		"______Target_MCA" /* MCA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_MobileClientAccessSDK" /* Build configuration list for PBXNativeTarget "MobileClientAccessSDK" */;
+			buildConfigurationList = "_______Confs_MCA" /* Build configuration list for PBXNativeTarget "MCA" */;
 			buildPhases = (
-				CompilePhase_MobileClientAccessSDK /* Sources */,
-				"___LinkPhase_MobileClientAccessSDK" /* Frameworks */,
+				CompilePhase_MCA /* Sources */,
+				"___LinkPhase_MCA" /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1520,13 +1633,14 @@
 				__Dependency_JSON /* PBXTargetDependency */,
 				__Dependency_String /* PBXTargetDependency */,
 				__Dependency_S4 /* PBXTargetDependency */,
-				__Dependency_SwiftyJSON /* PBXTargetDependency */,
 				__Dependency_libc /* PBXTargetDependency */,
 				__Dependency_Vapor /* PBXTargetDependency */,
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+				__Dependency_CFEnvironment /* PBXTargetDependency */,
 			);
-			name = MobileClientAccessSDK;
-			productName = MobileClientAccessSDK;
-			productReference = "_____Product_MobileClientAccessSDK" /* MobileClientAccessSDK */;
+			name = MCA;
+			productName = MCA;
+			productReference = "_____Product_MCA" /* MCA */;
 			productType = "com.apple.product-type.tool";
 		};
 		"______Target_OperatingSystem" /* OperatingSystem */ = {
@@ -1606,7 +1720,7 @@
 			);
 			name = S4.testsuite;
 			productName = S4TestSuite;
-			productReference = "_____Product_S4TestSuite" /* S4TestSuite.xctest */;
+			productReference = "_____Product_S4TestSuite" /* S4.testsuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"______Target_SHA2" /* SHA2 */ = {
@@ -1731,7 +1845,7 @@
 			);
 			name = Vapor.testsuite;
 			productName = VaporTestSuite;
-			productReference = "_____Product_VaporTestSuite" /* VaporTestSuite.xctest */;
+			productReference = "_____Product_VaporTestSuite" /* Vapor.testsuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"______Target_libc" /* libc */ = {
@@ -1782,6 +1896,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				"______Target_SwiftyJSON" /* SwiftyJSON */,
+				"______Target_CFEnvironment" /* CFEnvironment */,
+				"______Target_CFEnvironmentTestSuite" /* CFEnvironment.testsuite */,
 				"______Target_C7" /* C7 */,
 				"______Target_C7TestSuite" /* C7.testsuite */,
 				"______Target_S4" /* S4 */,
@@ -1803,8 +1920,7 @@
 				"______Target_Performance" /* Performance */,
 				"______Target_Vapor" /* Vapor */,
 				"______Target_VaporTestSuite" /* Vapor.testsuite */,
-				"______Target_SwiftyJSON" /* SwiftyJSON */,
-				"______Target_MobileClientAccessSDK" /* MobileClientAccessSDK */,
+				"______Target_MCA" /* MCA */,
 			);
 		};
 /* End PBXProject section */
@@ -1836,6 +1952,29 @@
 			buildActionMask = 0;
 			files = (
 				"__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_CFEnvironment /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/App.swift" /* App.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/AppEnv.swift" /* AppEnv.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironment.swift" /* CFEnvironment.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/CFEnvironmentError.swift" /* CFEnvironmentError.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/DateUtils.swift" /* DateUtils.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/JSONUtils.swift" /* JSONUtils.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Sources/CFEnvironment/Service.swift" /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_CFEnvironmentTestSuite /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/MainTests.swift" /* MainTests.swift in Sources */,
+				"__src_cc_ref_Packages/CFEnvironment-0.0.3/Tests/CFEnvironment/UtilsTests.swift" /* UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1927,21 +2066,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CompilePhase_MobileClientAccessSDK /* Sources */ = {
+		CompilePhase_MCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				__src_cc_ref_Sources/AppIdentity.swift /* AppIdentity.swift in Sources */,
-				__src_cc_ref_Sources/AuthorizationContext.swift /* AuthorizationContext.swift in Sources */,
-				__src_cc_ref_Sources/DeviceIdentity.swift /* DeviceIdentity.swift in Sources */,
-				__src_cc_ref_Sources/Logger.swift /* Logger.swift in Sources */,
-				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
-				__src_cc_ref_Sources/MCAError.swift /* MCAError.swift in Sources */,
-				__src_cc_ref_Sources/MCAVaporMiddleware.swift /* MCAVaporMiddleware.swift in Sources */,
-				__src_cc_ref_Sources/MobileClientAccessSDK.swift /* MobileClientAccessSDK.swift in Sources */,
-				"__src_cc_ref_Sources/String+Base64.swift" /* String+Base64.swift in Sources */,
-				__src_cc_ref_Sources/UserIdentity.swift /* UserIdentity.swift in Sources */,
-				__src_cc_ref_Sources/VaporServer.swift /* VaporServer.swift in Sources */,
+				__src_cc_ref_Sources/MCA/main.swift /* main.swift in Sources */,
+				__src_cc_ref_Sources/MCA/AuthContext/AppIdentity.swift /* AuthContext/AppIdentity.swift in Sources */,
+				__src_cc_ref_Sources/MCA/AuthContext/AuthorizationContext.swift /* AuthContext/AuthorizationContext.swift in Sources */,
+				__src_cc_ref_Sources/MCA/AuthContext/DeviceIdentity.swift /* AuthContext/DeviceIdentity.swift in Sources */,
+				__src_cc_ref_Sources/MCA/AuthContext/UserIdentity.swift /* AuthContext/UserIdentity.swift in Sources */,
+				__src_cc_ref_Sources/MCA/Core/MCAError.swift /* Core/MCAError.swift in Sources */,
+				__src_cc_ref_Sources/MCA/Core/MobileClientAccessSDK.swift /* Core/MobileClientAccessSDK.swift in Sources */,
+				__src_cc_ref_Sources/MCA/Utils/Logger.swift /* Utils/Logger.swift in Sources */,
+				"__src_cc_ref_Sources/MCA/Utils/String+Base64.swift" /* Utils/String+Base64.swift in Sources */,
+				__src_cc_ref_Sources/MCA/Vapor/MCAVaporMiddleware.swift /* Vapor/MCAVaporMiddleware.swift in Sources */,
+				__src_cc_ref_Sources/MCA/Vapor/VaporServer.swift /* Vapor/VaporServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2138,77 +2277,82 @@
 		__Dependency_C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_C7" /* C7 */;
-			targetProxy = 3AAA9D921CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6451CBC55D50058389A /* PBXContainerItemProxy */;
+		};
+		__Dependency_CFEnvironment /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_CFEnvironment" /* CFEnvironment */;
+			targetProxy = 3A45C6531CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_CryptoEssentials /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_CryptoEssentials" /* CryptoEssentials */;
-			targetProxy = 3AAA9D971CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6471CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_Data /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Data" /* Data */;
-			targetProxy = 3AAA9D941CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6441CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_HMAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_HMAC" /* HMAC */;
-			targetProxy = 3AAA9D991CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64B1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_Hummingbird /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Hummingbird" /* Hummingbird */;
-			targetProxy = 3AAA9D9A1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64C1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_InterchangeData /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_InterchangeData" /* InterchangeData */;
-			targetProxy = 3AAA9D951CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6491CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_JSON /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_JSON" /* JSON */;
-			targetProxy = 3AAA9D9B1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64D1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_OperatingSystem /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_OperatingSystem" /* OperatingSystem */;
-			targetProxy = 3AAA9D931CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6461CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_S4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_S4" /* S4 */;
-			targetProxy = 3AAA9D9D1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64F1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_SHA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_SHA2" /* SHA2 */;
-			targetProxy = 3AAA9D981CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64A1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_Strand /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Strand" /* Strand */;
-			targetProxy = 3AAA9D961CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6481CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_String /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_String" /* String */;
-			targetProxy = 3AAA9D9C1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C64E1CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_SwiftyJSON /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 3AAA9DA01CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6521CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_Vapor /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Vapor" /* Vapor */;
-			targetProxy = 3AAA9D9E1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6511CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 		__Dependency_libc /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_libc" /* libc */;
-			targetProxy = 3AAA9D9F1CBB223900A95BCB /* PBXContainerItemProxy */;
+			targetProxy = 3A45C6501CBC55D50058389A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2236,6 +2380,33 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_MODULE_NAME = C7TestSuite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_CFEnvironment /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
+				ENABLE_TESTABILITY = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_MODULE_NAME = CFEnvironment;
+				PRODUCT_NAME = "lib$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_CFEnvironmentTestSuite /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_MODULE_NAME = CFEnvironmentTestSuite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2364,14 +2535,14 @@
 			};
 			name = Release;
 		};
-		_ReleaseConf_MobileClientAccessSDK /* Release */ = {
+		_ReleaseConf_MCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = MobileClientAccessSDK;
+				PRODUCT_MODULE_NAME = MCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -2559,6 +2730,35 @@
 			};
 			name = Debug;
 		};
+		"___DebugConf_CFEnvironment" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
+				ENABLE_TESTABILITY = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_MODULE_NAME = CFEnvironment;
+				PRODUCT_NAME = "lib$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_CFEnvironmentTestSuite" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_MODULE_NAME = CFEnvironmentTestSuite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
 		"___DebugConf_CryptoEssentials" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2692,14 +2892,14 @@
 			};
 			name = Debug;
 		};
-		"___DebugConf_MobileClientAccessSDK" /* Debug */ = {
+		"___DebugConf_MCA" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = MobileClientAccessSDK;
+				PRODUCT_MODULE_NAME = MCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -2912,6 +3112,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		"_______Confs_CFEnvironment" /* Build configuration list for PBXNativeTarget "CFEnvironment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_CFEnvironment" /* Debug */,
+				_ReleaseConf_CFEnvironment /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_CFEnvironmentTestSuite" /* Build configuration list for PBXNativeTarget "CFEnvironment.testsuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_CFEnvironmentTestSuite" /* Debug */,
+				_ReleaseConf_CFEnvironmentTestSuite /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		"_______Confs_CryptoEssentials" /* Build configuration list for PBXNativeTarget "CryptoEssentials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2993,11 +3211,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		"_______Confs_MobileClientAccessSDK" /* Build configuration list for PBXNativeTarget "MobileClientAccessSDK" */ = {
+		"_______Confs_MCA" /* Build configuration list for PBXNativeTarget "MCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				"___DebugConf_MobileClientAccessSDK" /* Debug */,
-				_ReleaseConf_MobileClientAccessSDK /* Release */,
+				"___DebugConf_MCA" /* Debug */,
+				_ReleaseConf_MCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
