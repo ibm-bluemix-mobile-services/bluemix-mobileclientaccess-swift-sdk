@@ -15,9 +15,9 @@ import Foundation
 
 /// BluemixObjectStore internal logging infrastructure
 public class Logger{
-	
+
 	let name:String;
-	
+
 	#if swift(>=3)
 	/// Use to enable or disable BluemixObjectStore internal logging output
 	public static let debugLogEnabled:Boolean = true
@@ -29,28 +29,28 @@ public class Logger{
 	private static let LEVEL_ERR = "ERR";
 	private static let LEVEL_DBG = "DBG";
 	private static let LEVEL_WRN = "WRN";
-	
+
 	internal init(forName:String){
 		self.name = forName
 	}
-	
+
 	internal func info(text:String){
-		printLog(text, level: Logger.LEVEL_INF)
+		printLog(text:text, level: Logger.LEVEL_INF)
 	}
-	
+
 	internal func debug(text:String){
-		printLog(text, level: Logger.LEVEL_DBG)
+		printLog(text:text, level: Logger.LEVEL_DBG)
 	}
-	
+
 	internal func warn(text:String){
-		printLog(text, level: Logger.LEVEL_WRN)
+		printLog(text:text, level: Logger.LEVEL_WRN)
 	}
-	
+
 
 	internal func error(text:String){
-		printLog(text, level: Logger.LEVEL_ERR)
+		printLog(text:text, level: Logger.LEVEL_ERR)
 	}
-	
+
 	private func printLog(text:String, level:String){
 		if (Logger.debugLogEnabled){
 			print("[\(level)] [\(self.name)] \(text)")

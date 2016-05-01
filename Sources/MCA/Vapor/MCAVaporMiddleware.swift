@@ -17,7 +17,7 @@ public class MCAVaporMiddleware: Middleware {
 		driver = MemorySessionDriver(hash:hash)
     }
 
-	public func respond(request: Request, chain: Responder) throws -> Response {
+	public func respond(to request: Request, chainingTo chain: Responder) throws -> Response {
 		let headers = request.headers.headers
 		let authHeaders = headers["Authorization"]
 		let authHeader = authHeaders?[0]
@@ -33,7 +33,7 @@ public class MCAVaporMiddleware: Middleware {
 		}
 
 		request.session?["MCAAuthContext"] = authContext?.json.rawString()
-		return try chain.respond(request)
+		return try chain.respond(to: request)
 	}
 }
 

@@ -27,6 +27,6 @@ extension String{
 		}
 		let base64 = self.replacingOccurrences(of: "-", with: "+", options: NSStringCompareOptions(rawValue:0), range: nil)
 			.replacingOccurrences(of: "_", with: "/", options: NSStringCompareOptions(rawValue: 0), range: nil) + ending
-		return NSData(base64EncodedString: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
+		return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
 	}
 }

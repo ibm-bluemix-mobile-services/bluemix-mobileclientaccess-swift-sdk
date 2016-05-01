@@ -66,7 +66,8 @@ public class AuthorizationContext {
 	}
 	
 	public static func from(jsonString jsonString:String) throws -> AuthorizationContext?{
-		if let jsonData = jsonString.data(usingEncoding: NSUTF8StringEncoding, allowLossyConversion: false) {
+            
+		if let jsonData = jsonString.data(using: NSUTF8StringEncoding, allowLossyConversion: false) {
 			let json = JSON(data: jsonData)
 			return AuthorizationContext(idTokenPayload: json)
 		} else {

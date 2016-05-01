@@ -14,7 +14,7 @@ public class VaporServer {
 	private let logger = Logger(forName:"VaporServer")
 
 	public func start(onPort port:Int){
-		logger.info("Staring on port " + String(port))
+		logger.info(text: "Staring on port " + String(port))
 		let app = Application()
 		
 		app.middleware.removeLast()
