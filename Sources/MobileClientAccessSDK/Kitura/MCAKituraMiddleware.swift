@@ -26,7 +26,8 @@ public class MCAKituraMiddleware: RouterMiddleware {
         let authHeader = authHeaders?[0]
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: authHeader) { error, authContext in
 			if error != nil{
-				response.status(.UNAUTHORIZED)
+                response.setHeader("WWW-Authenticate", value: "Bearer realm=\"imfAuthentication\"")
+                response.status(.UNAUTHORIZED)
 				_ = try? response.end("Unauthorized")
 			} else {
 				request.userInfo["mcaAuthContext"] = authContext
