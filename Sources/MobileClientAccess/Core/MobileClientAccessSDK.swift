@@ -12,8 +12,8 @@
 */
 
 import Foundation
-import SwiftyJSON
 import SimpleLogger
+import SwiftyJSON
 
 public class MobileClientAccessSDK{
 	private let logger = Logger(forName:"MobileClientAccess")

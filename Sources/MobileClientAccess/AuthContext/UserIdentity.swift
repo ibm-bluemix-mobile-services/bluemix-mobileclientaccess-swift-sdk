@@ -15,7 +15,7 @@
 import SwiftyJSON
 
 public class UserIdentity {
-	
+
 	public var id: String{
 		get {
 			return json["id"].stringValue
@@ -41,7 +41,7 @@ public class UserIdentity {
 	}
 
 	internal var json:JSON
-	
+
 	internal init(json:JSON) {
 		self.json = json
 	}

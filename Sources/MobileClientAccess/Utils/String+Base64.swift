@@ -21,22 +21,22 @@ extension String{
 			return nil;
 		}
 	}
-	
+
 	func base64decodedData() -> NSData? {
 		let missing = self.characters.count % 4
-		
+
 		var ending = ""
 		if missing > 0 {
 			let amount = 4 - missing
 			ending = String(repeating: Character("="), count: amount)
 		}
-		
+
 		#if os(Linux)
 			let base64 = self.stringByReplacingOccurrencesOfString("-", withString: "+").stringByReplacingOccurrencesOfString("_", withString: "/") + ending
 		#else
 			let base64 = self.replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/") + ending
 		#endif
-		
+
 		return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
 	}
 }

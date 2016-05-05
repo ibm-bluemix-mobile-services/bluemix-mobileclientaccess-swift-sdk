@@ -14,7 +14,6 @@
 /// This class represents the base app identity class, with default methods and keys
 
 import SwiftyJSON
-
 public class AppIdentity{
 	public var id:String {
 		get {

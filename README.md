@@ -18,7 +18,8 @@ let package = Package(
     ]
 )
 ```
-0.0.x releases are tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
+0.1.x releases are tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
+0.0.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
 
 ## Usage
 
@@ -33,7 +34,7 @@ MobileClientAccessSDK.sharedInstance.authorizationContext(from: authorizationHea
 		let userIdentity = authContext.userIdentity
 		let deviceIdentity = authContext.deviceIdentity
 		let appIdentity = authContext.appIdentity
-		
+
 		print ("user id :: \(userIdentity?.id)")
 		print ("device id :: \(deviceIdentity.id)")
 		print ("appIdentity id :: \(appIdentity.id)")
