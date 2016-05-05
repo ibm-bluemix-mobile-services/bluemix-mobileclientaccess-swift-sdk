@@ -1,5 +1,5 @@
 import XCTest
-@testable import MobileClientAccessSDK
+@testable import MobileClientAccessSDKTestSuite
 
 XCTMain([
 	testCase(MobileClientAccessSDKTests.allTests)
