@@ -14,7 +14,7 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-serversdk-swift-mca.git", majorVersion: 0, minor: 0)
+        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-serversdk-swift-mca.git", majorVersion: 0, minor: 1)
     ]
 )
 ```
