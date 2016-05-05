@@ -18,8 +18,8 @@ let package = Package(
     ]
 )
 ```
-0.1.x releases are tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
-0.0.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
+* 0.1.x releases are tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
+* 0.0.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
 
 ## Usage
 
