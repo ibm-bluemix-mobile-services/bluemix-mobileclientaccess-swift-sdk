@@ -12,7 +12,6 @@
 */
 
 /// This class represents the base device identity class, with default methods and keys
-
 import SwiftyJSON
 
 public class DeviceIdentity {

@@ -16,24 +16,22 @@ import SwiftyJSON
 import SimpleLogger
 
 public class MobileClientAccessSDK{
-	private let logger = Logger(forName:"MobileClientAccessSDK")
+	private let logger = Logger(forName:"MobileClientAccess")
 	private static let HEADER_AUTHORIZATION = "Authorization"
 	private static let BEARER = "Bearer"
 
 	public static let sharedInstance = MobileClientAccessSDK()
 
-	private init(){
-		logger.info("Initializing")
-	}
+	private init(){}
 
-	public func authorizationContext(from authorizationHeader:String?, completionHandler: (error: MCAError?, authContext: AuthorizationContext?)->Void){
-		logger.debug("authorizationContext:from:")
+	public func authorizationContext(from authorizationHeader:String?, completionHandler: (error: MobileClientAccessError?, authContext: AuthorizationContext?) -> Void) {
+		logger.debug("authorizationContext:from:completionHandler:")
 
 		guard authorizationHeader != nil else {
 			logger.error(MCAErrorInternal.AuthorizationHeaderNotFound.rawValue)
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
-		
+
 		#if os(Linux)
 			let authHeaderComponents:[String]! = authorizationHeader?.componentsSeparatedByString(" ")
 		#else
@@ -117,5 +115,3 @@ public class MobileClientAccessSDK{
 		return json
 	}
 }
-
-
