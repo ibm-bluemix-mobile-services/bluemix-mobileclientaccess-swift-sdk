@@ -13,12 +13,15 @@
 
 import Foundation
 
-public enum MCAError: String, ErrorProtocol{
+internal typealias MCAError = MobileClientAccessError
+internal typealias MCAErrorInternal = MobileClientAccessErrorInternal
+
+public enum MobileClientAccessError: String, ErrorProtocol{
 	case Unauthorized = "Unauthorized"
 	case FailedParsingAuthContext = "Failed to parse authorization context"
 }
 
-internal enum MCAErrorInternal: String, ErrorProtocol {
+internal enum MobileClientAccessErrorInternal: String, ErrorProtocol {
 	case AuthorizationHeaderNotFound = "Authorization header not found"
 	case InvalidAuthHeaderFormat = "Invalid authorization header format. Expected format 'Bearer accessToken idToken'"
 	case InvalidAccessToken = "Invalid access token"
