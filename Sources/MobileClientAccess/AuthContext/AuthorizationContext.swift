@@ -76,11 +76,7 @@ public class AuthorizationContext {
 
 	public static func from(jsonString:String) throws -> AuthorizationContext?{
 
-		#if os(Linux)
-			let jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
-		#else
-			let jsonData = jsonString.data(using: NSUTF8StringEncoding, allowLossyConversion: false)
-		#endif
+		let jsonData = jsonString.data(using: NSUTF8StringEncoding, allowLossyConversion: false)
 
 		if jsonData != nil  {
 			let json = JSON(data: jsonData!)

@@ -31,11 +31,7 @@ extension String{
 			ending = String(repeating: Character("="), count: amount)
 		}
 
-		#if os(Linux)
-			let base64 = self.stringByReplacingOccurrencesOfString("-", withString: "+").stringByReplacingOccurrencesOfString("_", withString: "/") + ending
-		#else
-			let base64 = self.replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/") + ending
-		#endif
+		let base64 = self.replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/") + ending
 
 		return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
 	}

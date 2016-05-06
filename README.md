@@ -9,16 +9,18 @@
 [platform-url]: https://swift.org
 
 ## Installation
+
 ```swift
 import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-serversdk-swift-mca.git", majorVersion: 0, minor: 1)
+        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.git", majorVersion: 0, minor: 1)
     ]
 )
 ```
-* 0.1.x releases are tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
+
+* 0.1.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
 * 0.0.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
 
 ## Usage

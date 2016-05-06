@@ -32,11 +32,7 @@ public class MobileClientAccessSDK{
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
 
-		#if os(Linux)
-			let authHeaderComponents:[String]! = authorizationHeader?.componentsSeparatedByString(" ")
-		#else
-			let authHeaderComponents:[String]! = authorizationHeader?.components(separatedBy: " ")
-		#endif
+		let authHeaderComponents:[String]! = authorizationHeader?.components(separatedBy: " ")
 
 
 		// authHeader format :: "Bearer accessToken idToken"
@@ -85,11 +81,7 @@ public class MobileClientAccessSDK{
 	private func parseToken(from tokenString:String) throws -> JSON {
 		logger.debug("parseToken:from:")
 
-		#if os(Linux)
-			let accessTokenComponents = tokenString.componentsSeparatedByString(".")
-		#else
-			let accessTokenComponents = tokenString.components(separatedBy: ".")
-		#endif
+		let accessTokenComponents = tokenString.components(separatedBy: ".")
 
 		guard accessTokenComponents.count == 3 else {
 			logger.error(MCAErrorInternal.InvalidAccessTokenFormat.rawValue)
