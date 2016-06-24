@@ -7,6 +7,7 @@
 [swift-url]: https://swift.org
 [platform-badge]: https://img.shields.io/badge/Platforms-OS%20X%20--%20Linux-lightgray.svg
 [platform-url]: https://swift.org
+[![Build Status](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)
 
 ## Known limitations
 
@@ -63,8 +64,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-[swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg
-[swift-url]: https://swift.org
-[platform-badge]: https://img.shields.io/badge/Platforms-OS%20X%20--%20Linux-lightgray.svg
-[platform-url]: https://swift.org
