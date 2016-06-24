@@ -10,7 +10,7 @@
 
 ## Known limitations
 
-The SDK is still in development phase and should not be used for production. At this point digital signatures of access and identity tokens are not validated, which makes it easier to fake these tokens by a malicious party. 
+The SDK is still in development phase and should not be used for production. At this point digital signatures of access and identity tokens are not validated, which makes it easier to fake these tokens by a malicious party.
 
 ## Installation
 
@@ -19,14 +19,13 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.git", majorVersion: 0, minor: 2)
+        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.git", majorVersion: 0, minor: 3)
     ]
 )
 ```
 
+* 0.3.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-06-06-a
 * 0.2.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
-* 0.1.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
-* 0.0.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-04-25-a
 
 ## Usage
 

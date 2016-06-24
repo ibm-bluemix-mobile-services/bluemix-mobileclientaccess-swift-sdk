@@ -2,7 +2,7 @@ import XCTest
 import Foundation
 @testable import MobileClientAccess
 
-class MobileClientAccessSDKTests: XCTestCase {
+class MobileClientAccessTests: XCTestCase {
 
 	override func setUp(){
 		self.continueAfterFailure = false
@@ -96,16 +96,16 @@ class MobileClientAccessSDKTests: XCTestCase {
 			XCTAssertNil(error, "test timeout")
 		}
 	}
-	
+
 	func testValidAuthHeaderWithoutIdHeader(){
 		let exp = expectation(withDescription: "testMcaSdk")
-		
+
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.validAuthHeaderWithoutIdToken) { (error, authContext) in
 			XCTAssertNil(error, "error != nil")
 			XCTAssertNil(authContext, "authContext != nil")
 			exp.fulfill()
 		}
-		
+
 		waitForExpectations(withTimeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
@@ -131,8 +131,8 @@ class Consts {
 
 
 
-extension MobileClientAccessSDKTests {
-	static var allTests : [(String, MobileClientAccessSDKTests -> () throws -> Void)] {
+extension MobileClientAccessTests {
+	static var allTests : [(String, (MobileClientAccessTests) -> () throws -> Void)] {
 		return [
 		       	("testInvalidAuthHeader", testInvalidAuthHeader),
 		       	("testBadStructureAuthHeader", testBadStructureAuthHeader),
