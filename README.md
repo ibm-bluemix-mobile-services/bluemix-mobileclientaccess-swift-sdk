@@ -2,12 +2,12 @@
 
 [![Swift][swift-badge]][swift-url]
 [![Platform][platform-badge]][platform-url]
+[![Build Status](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)
 
 [swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg
 [swift-url]: https://swift.org
 [platform-badge]: https://img.shields.io/badge/Platforms-OS%20X%20--%20Linux-lightgray.svg
 [platform-url]: https://swift.org
-[![Build Status](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)
 
 ## Known limitations
 
