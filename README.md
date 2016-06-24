@@ -2,7 +2,7 @@
 
 [![Swift][swift-badge]][swift-url]
 [![Platform][platform-badge]][platform-url]
-[![Build Status](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)
+[![Build Status](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.svg)](https://travis-ci.org/ibm-bluemix-mobile-services/bms-mca-serversdk-swift)
 
 [swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg
 [swift-url]: https://swift.org
