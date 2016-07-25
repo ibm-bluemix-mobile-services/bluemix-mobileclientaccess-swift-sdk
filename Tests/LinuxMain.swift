@@ -1,6 +1,6 @@
 import XCTest
-@testable import MCASDKTestSuite
+@testable import MobileClientAccessTestSuite
 
 XCTMain([
-	testCase(HttpClientTests.allTests)
+	testCase(MobileClientAccessTests.allTests)
 ])

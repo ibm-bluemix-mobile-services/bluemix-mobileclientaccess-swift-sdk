@@ -12,51 +12,50 @@
 */
 
 import Foundation
-import SwiftyJSON
 import SimpleLogger
+import SwiftyJSON
 
 public class MobileClientAccessSDK{
-	private let logger = Logger(forName:"MobileClientAccessSDK")
+	private let logger = Logger(forName:"MobileClientAccess")
 	private static let HEADER_AUTHORIZATION = "Authorization"
 	private static let BEARER = "Bearer"
 
 	public static let sharedInstance = MobileClientAccessSDK()
 
-	private init(){
-		logger.info("Initializing")
-	}
+	private init(){}
 
-	public func authorizationContext(from authorizationHeader:String?, completionHandler: (error: MCAError?, authContext: AuthorizationContext?)->Void){
-		logger.debug("authorizationContext:from:")
+	public func authorizationContext(from authorizationHeader:String?, completionHandler: (error: MobileClientAccessError?, authContext: AuthorizationContext?) -> Void) {
+		logger.debug("authorizationContext:from:completionHandler:")
 
 		guard authorizationHeader != nil else {
 			logger.error(MCAErrorInternal.AuthorizationHeaderNotFound.rawValue)
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
-		
-		#if os(Linux)
-			let authHeaderComponents:[String]! = authorizationHeader?.componentsSeparatedByString(" ")
-		#else
-			let authHeaderComponents:[String]! = authorizationHeader?.components(separatedBy: " ")
-		#endif
+
+		let authHeaderComponents:[String]! = authorizationHeader?.components(separatedBy: " ")
 
 
 		// authHeader format :: "Bearer accessToken idToken"
-		guard authHeaderComponents?.count == 3 && authHeaderComponents[0] == MobileClientAccessSDK.BEARER else {
+		guard (authHeaderComponents?.count == 3 || authHeaderComponents?.count == 2) && authHeaderComponents[0] == MobileClientAccessSDK.BEARER else {
 			logger.error(MCAErrorInternal.InvalidAuthHeaderFormat.rawValue)
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
 
 		let accessToken:String! = authHeaderComponents[1]
-		let idToken:String? = authHeaderComponents[2]
+		let idToken:String? = authHeaderComponents.count == 3 ? authHeaderComponents[2] : nil
 
 		guard isAccessTokenValid(accessToken: accessToken) else {
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
-
-		if let authContext = try? getAuthorizedIdentities(from: idToken!){
+		
+		if let idToken = idToken, let authContext = try? getAuthorizedIdentities(from: idToken){
+			// idToken is present and successfully parsed
 			return completionHandler(error: nil, authContext: authContext)
+		} else if idToken == nil {
+			// idToken is not present
+			return completionHandler(error: nil, authContext: nil)
 		} else {
+			// idToken parsing failed
 			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
 		}
 	}
@@ -87,11 +86,7 @@ public class MobileClientAccessSDK{
 	private func parseToken(from tokenString:String) throws -> JSON {
 		logger.debug("parseToken:from:")
 
-		#if os(Linux)
-			let accessTokenComponents = tokenString.componentsSeparatedByString(".")
-		#else
-			let accessTokenComponents = tokenString.components(separatedBy: ".")
-		#endif
+		let accessTokenComponents = tokenString.components(separatedBy: ".")
 
 		guard accessTokenComponents.count == 3 else {
 			logger.error(MCAErrorInternal.InvalidAccessTokenFormat.rawValue)
@@ -117,5 +112,3 @@ public class MobileClientAccessSDK{
 		return json
 	}
 }
-
-

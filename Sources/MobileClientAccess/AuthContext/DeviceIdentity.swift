@@ -14,9 +14,8 @@
 /// This class represents the base device identity class, with default methods and keys
 
 import SwiftyJSON
-
 public class DeviceIdentity {
-	
+
 	public var id:String {
 		get {
 			return json["id"].stringValue
@@ -41,7 +40,7 @@ public class DeviceIdentity {
 		}
 	}
 	internal let json:JSON
-	
+
 	internal init(json: JSON) {
 		self.json = json
 	}
