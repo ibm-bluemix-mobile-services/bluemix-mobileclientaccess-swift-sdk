@@ -16,7 +16,13 @@ import Foundation
 extension String{
 	func base64decodedString() -> String?{
 		if let data = self.base64decodedData(){
-			return String(data: data, encoding:NSUTF8StringEncoding)
+			#if os(Linux)
+				return String(data: data, encoding:NSUTF8StringEncoding)
+			#else
+				return String(data: data as Data, encoding:String.Encoding.utf8)
+			#endif
+
+			
 		} else {
 			return nil;
 		}
@@ -33,6 +39,10 @@ extension String{
 
 		let base64 = self.replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/") + ending
 
-		return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
+		#if os(Linux)
+			return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
+		#else
+			return NSData(base64Encoded: base64, options: NSData.Base64DecodingOptions(rawValue: 0))
+		#endif
 	}
 }
