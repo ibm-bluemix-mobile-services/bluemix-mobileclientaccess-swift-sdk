@@ -24,12 +24,12 @@ public class MobileClientAccessSDK{
 
 	private init(){}
 
-	public func authorizationContext(from authorizationHeader:String?, completionHandler: (error: MobileClientAccessError?, authContext: AuthorizationContext?) -> Void) {
+	public func authorizationContext(from authorizationHeader:String?, completionHandler: (_ error: MobileClientAccessError?, _ authContext: AuthorizationContext?) -> Void) {
 		logger.debug("authorizationContext:from:completionHandler:")
 
 		guard authorizationHeader != nil else {
 			logger.error(MCAErrorInternal.AuthorizationHeaderNotFound.rawValue)
-			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
+			return completionHandler(MCAError.Unauthorized, nil)
 		}
 
 		let authHeaderComponents:[String]! = authorizationHeader?.components(separatedBy: " ")
@@ -38,25 +38,25 @@ public class MobileClientAccessSDK{
 		// authHeader format :: "Bearer accessToken idToken"
 		guard (authHeaderComponents?.count == 3 || authHeaderComponents?.count == 2) && authHeaderComponents[0] == MobileClientAccessSDK.BEARER else {
 			logger.error(MCAErrorInternal.InvalidAuthHeaderFormat.rawValue)
-			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
+			return completionHandler(MCAError.Unauthorized, nil)
 		}
 
 		let accessToken:String! = authHeaderComponents[1]
 		let idToken:String? = authHeaderComponents.count == 3 ? authHeaderComponents[2] : nil
 
 		guard isAccessTokenValid(accessToken: accessToken) else {
-			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
+			return completionHandler(MCAError.Unauthorized, nil)
 		}
 		
 		if let idToken = idToken, let authContext = try? getAuthorizedIdentities(from: idToken){
 			// idToken is present and successfully parsed
-			return completionHandler(error: nil, authContext: authContext)
+			return completionHandler(nil, authContext)
 		} else if idToken == nil {
 			// idToken is not present
-			return completionHandler(error: nil, authContext: nil)
+			return completionHandler(nil, nil)
 		} else {
 			// idToken parsing failed
-			return completionHandler(error: MCAError.Unauthorized, authContext: nil)
+			return completionHandler(MCAError.Unauthorized, nil)
 		}
 	}
 
