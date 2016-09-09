@@ -16,33 +16,23 @@ import Foundation
 extension String{
 	func base64decodedString() -> String?{
 		if let data = self.base64decodedData(){
-			#if os(Linux)
-				return String(data: data, encoding:NSUTF8StringEncoding)
-			#else
-				return String(data: data as Data, encoding:String.Encoding.utf8)
-			#endif
-
-			
+			return String(data: data, encoding:String.Encoding.utf8)
 		} else {
 			return nil;
 		}
 	}
 
-	func base64decodedData() -> NSData? {
+	func base64decodedData() -> Data? {
 		let missing = self.characters.count % 4
 
 		var ending = ""
 		if missing > 0 {
 			let amount = 4 - missing
-			ending = String(repeating: Character("="), count: amount)
+			ending = String(repeating: "=", count: amount)
 		}
 
 		let base64 = self.replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/") + ending
-
-		#if os(Linux)
-			return NSData(base64Encoded: base64, options: NSDataBase64DecodingOptions(rawValue: 0))
-		#else
-			return NSData(base64Encoded: base64, options: NSData.Base64DecodingOptions(rawValue: 0))
-		#endif
+		
+		return Data(base64Encoded: base64, options: Data.Base64DecodingOptions())
 	}
 }

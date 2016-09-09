@@ -9,7 +9,7 @@ class MobileClientAccessTests: XCTestCase {
 	}
 
 	func testInvalidAuthHeader(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.invalidAuthHeader) { (error, authContext) in
 			XCTAssertNotNil(error, "error == nil")
@@ -17,13 +17,13 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 	}
 
 	func testBadStructureAuthHeader(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.badStructureAuthHeader) { (error, authContext) in
 			XCTAssertNotNil(error, "error == nil")
@@ -31,13 +31,13 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 	}
 
 	func testExpiredAuthHeader(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.expiredAuthHeader) { (error, authContext) in
 			XCTAssertNotNil(error, "error == nil")
@@ -45,13 +45,13 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 	}
 
 	func testValidAuthHeaderWithUserIdentity(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.validAuthHeaderWithUserIdentity) { (error, authContext) in
 			XCTAssertNil(error, "error != nil")
@@ -77,13 +77,13 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 	}
 
 	func testValidAuthHeaderWithoutUserIdentity(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.validAuthHeaderWithoutUserIdentity) { (error, authContext) in
 			XCTAssertNil(error, "error != nil")
@@ -92,13 +92,13 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 	}
 
 	func testValidAuthHeaderWithoutIdHeader(){
-		let exp = expectation(withDescription: "testMcaSdk")
+		let exp = expectation(description: "testMcaSdk")
 
 		MobileClientAccessSDK.sharedInstance.authorizationContext(from: Consts.validAuthHeaderWithoutIdToken) { (error, authContext) in
 			XCTAssertNil(error, "error != nil")
@@ -106,7 +106,7 @@ class MobileClientAccessTests: XCTestCase {
 			exp.fulfill()
 		}
 
-		waitForExpectations(withTimeout: 3) { (error) in
+		waitForExpectations(timeout: 3) { (error) in
 			XCTAssertNil(error, "test timeout")
 		}
 
