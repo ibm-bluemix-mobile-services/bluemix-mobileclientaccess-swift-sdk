@@ -1,0 +1,18 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "SimpleLogger",
+      "reason": null,
+      "repositoryURL": "https://github.com/ibm-bluemix-mobile-services/bluemix-simple-logger-swift.git",
+      "version": "0.5.0"
+    },
+    {
+      "package": "SwiftyJSON",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
+      "version": "15.0.6"
+    }
+  ],
+  "version": 1
+}
