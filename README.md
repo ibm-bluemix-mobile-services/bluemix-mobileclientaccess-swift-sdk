@@ -1,4 +1,4 @@
-#Server side Swift SDK for Mobile Client Access Service
+# Server side Swift SDK for Mobile Client Access Service
 
 [![Swift][swift-badge]][swift-url]
 [![Platform][platform-badge]][platform-url]
@@ -20,16 +20,18 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.git", majorVersion: 0, minor: 4)
+        .Package(url: "https://github.com/ibm-bluemix-mobile-services/bms-mca-serversdk-swift.git", majorVersion: 0, minor: 6)
     ]
 )
 ```
 
-* 0.5.x releases were tested on OSX and Linux with 3.0.1
-* 0.5.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-09-07-a
-* 0.4.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-06-20-a
-* 0.3.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-06-06-a
-* 0.2.x releases were tested on OSX and Linux with DEVELOPMENT-SNAPSHOT-2016-05-03-a
+## Releases
+
+* 0.6.x releases were tested on OSX and Linux with Swift 3.1
+* 0.5.x releases were tested on OSX and Linux with Swift 3.0.1
+* 0.4.x releases were tested on OSX and Linux with Swift DEVELOPMENT-SNAPSHOT-2016-06-20-a
+* 0.3.x releases were tested on OSX and Linux with Swift DEVELOPMENT-SNAPSHOT-2016-06-06-a
+* 0.2.x releases were tested on OSX and Linux with Swift DEVELOPMENT-SNAPSHOT-2016-05-03-a
 
 ## Usage
 
@@ -54,7 +56,7 @@ MobileClientAccessSDK.sharedInstance.authorizationContext(from: authorizationHea
 
 ## License
 
-Copyright 2016 IBM Corp.
+Copyright 2017 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
